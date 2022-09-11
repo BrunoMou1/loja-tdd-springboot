@@ -1,0 +1,265 @@
+# Created at 2022-09-11T11:39:10.110
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2022-09-11T11:39:10.502
+Unexpected IOException with stream: 2022-09-11 11:39:10.500  INFO 15872 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 1 JPA repository interfaces.
+
+
+# Created at 2022-09-11T11:39:13.170
+Unexpected IOException with stream: 2022-09-11 11:39:13.169  INFO 15872 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+
+
+# Created at 2022-09-11T11:39:13.606
+Unexpected IOException with stream: 2022-09-11 11:39:13.605  INFO 15872 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+
+
+# Created at 2022-09-11T11:39:14.510
+Unexpected IOException with stream: 2022-09-11 11:39:14.509  INFO 15872 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+
+
+# Created at 2022-09-11T11:39:14.902
+Unexpected IOException with stream: 2022-09-11 11:39:14.898  INFO 15872 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+
+
+# Created at 2022-09-11T11:39:15.400
+Unexpected IOException with stream: 2022-09-11 11:39:15.399  INFO 15872 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+
+
+# Created at 2022-09-11T11:39:15.476
+Unexpected IOException with stream: 2022-09-11 11:39:15.475  INFO 15872 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+
+
+# Created at 2022-09-11T11:39:17.862
+Unexpected IOException with stream: 2022-09-11 11:39:17.860  INFO 15872 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+
+
+# Created at 2022-09-11T11:39:17.880
+Unexpected IOException with stream: 2022-09-11 11:39:17.879  INFO 15872 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+
+# Created at 2022-09-11T11:39:19.569
+Unexpected IOException with stream: 2022-09-11 11:39:19.565  WARN 15872 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+
+# Created at 2022-09-11T11:39:24.422
+Unexpected IOException with stream: 2022-09-11 11:39:24.421  INFO 15872 --- [           main] com.loja.loja.daos.ClienteDaoTests       : Started ClienteDaoTests in 17.714 seconds (JVM running for 22.123)
+
+
+# Created at 2022-09-11T11:39:24.481
+Unexpected IOException: 5,1,com.loja.loja.daos.ClienteDaoTests,validarFindDoDaoDeCliente,null,null,null
+
+
+# Created at 2022-09-11T11:39:25.908
+Unexpected IOException with stream: Hibernate: select count(*) as col_0_0_ from cliente cliente0_
+
+
+# Created at 2022-09-11T11:39:25.981
+Unexpected IOException: 6,1,com.loja.loja.daos.ClienteDaoTests,validarFindDoDaoDeCliente,null,null,null
+
+
+# Created at 2022-09-11T11:39:25.985
+Unexpected IOException: 5,1,com.loja.loja.daos.ClienteDaoTests,validarSeEmailCadastradoExiste,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.226
+Unexpected IOException with stream: Hibernate: select CASE WHEN count(1) > 0 THEN 'true' ELSE 'false' END  from clientes where email = ?
+
+
+# Created at 2022-09-11T11:39:26.323
+Unexpected IOException with stream: 2022-09-11 11:39:26.322  WARN 15872 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+
+
+# Created at 2022-09-11T11:39:26.325
+Unexpected IOException with stream: 2022-09-11 11:39:26.324 ERROR 15872 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'loja_tdd.clientes' doesn't exist
+
+
+# Created at 2022-09-11T11:39:26.349
+Unexpected IOException: 7,1,com.loja.loja.daos.ClienteDaoTests,validarSeEmailCadastradoExiste,null,could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet,null,could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet,ClienteDaoTests.validarSeEmailCadastradoExiste:24 \00BB InvalidDataAccessResourceUsage,org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet\000A\0009at com.loja.loja.daos.ClienteDaoTests.validarSeEmailCadastradoExiste(ClienteDaoTests.java:24)\000ACaused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet\000A\0009at com.loja.loja.daos.ClienteDaoTests.validarSeEmailCadastradoExiste(ClienteDaoTests.java:24)\000ACaused by: java.sql.SQLSyntaxErrorException: Table 'loja_tdd.clientes' doesn't exist\000A\0009at com.loja.loja.daos.ClienteDaoTests.validarSeEmailCadastradoExiste(ClienteDaoTests.java:24)\000A
+
+
+# Created at 2022-09-11T11:39:26.356
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.loja.loja.daos.ClienteDaoTests,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.368
+Unexpected IOException: 1,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.loja.loja.models.ClientesTests,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.371
+Unexpected IOException with stream: 2022-09-11 11:39:26.370  INFO 15872 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.loja.loja.models.ClientesTests], using SpringBootContextLoader
+
+
+# Created at 2022-09-11T11:39:26.373
+Unexpected IOException with stream: 2022-09-11 11:39:26.372  INFO 15872 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.loja.loja.models.ClientesTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+
+
+# Created at 2022-09-11T11:39:26.375
+Unexpected IOException with stream: 2022-09-11 11:39:26.374  INFO 15872 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.loja.loja.models.ClientesTests]: ClientesTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+
+
+# Created at 2022-09-11T11:39:26.407
+Unexpected IOException with stream: 2022-09-11 11:39:26.406  INFO 15872 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.loja.loja.LojaApplication for test class com.loja.loja.models.ClientesTests
+
+
+# Created at 2022-09-11T11:39:26.412
+Unexpected IOException with stream: 2022-09-11 11:39:26.410  INFO 15872 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+
+
+# Created at 2022-09-11T11:39:26.416
+Unexpected IOException with stream: 2022-09-11 11:39:26.414  INFO 15872 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9a16af1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@47e70f54, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@30a6984c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@45302e66, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@47c422d3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@382608d0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3c468360, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7841c990, org.springframework.test.context.event.EventPublishingTestExecutionListener@1e75bef1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@169d5567, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1e489957, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@68b3de47, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5b827796, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@27c827ec, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7d108063]
+
+
+# Created at 2022-09-11T11:39:26.423
+Unexpected IOException: 5,1,com.loja.loja.models.ClientesTests,validarPropriedades,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.432
+Unexpected IOException: 6,1,com.loja.loja.models.ClientesTests,validarPropriedades,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.434
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.loja.loja.models.ClientesTests,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.437
+Unexpected IOException: 1,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.loja.loja.models.PedidoProdutosTests,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.450
+Unexpected IOException with stream: 2022-09-11 11:39:26.438  INFO 15872 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.loja.loja.models.PedidoProdutosTests], using SpringBootContextLoader
+
+
+# Created at 2022-09-11T11:39:26.454
+Unexpected IOException with stream: 2022-09-11 11:39:26.453  INFO 15872 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.loja.loja.models.PedidoProdutosTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+
+
+# Created at 2022-09-11T11:39:26.455
+Unexpected IOException with stream: 2022-09-11 11:39:26.455  INFO 15872 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.loja.loja.models.PedidoProdutosTests]: PedidoProdutosTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+
+
+# Created at 2022-09-11T11:39:26.459
+Unexpected IOException with stream: 2022-09-11 11:39:26.458  INFO 15872 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.loja.loja.LojaApplication for test class com.loja.loja.models.PedidoProdutosTests
+
+
+# Created at 2022-09-11T11:39:26.463
+Unexpected IOException with stream: 2022-09-11 11:39:26.461  INFO 15872 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+
+
+# Created at 2022-09-11T11:39:26.465
+Unexpected IOException with stream: 2022-09-11 11:39:26.464  INFO 15872 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@236206f8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5c04ec8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@e5f05f8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5a88849, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@36ce0bc2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@317fa5dd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@477906cf, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@65234a9, org.springframework.test.context.event.EventPublishingTestExecutionListener@4004bfba, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@c19bb2a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3599b18, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@143900a6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@712594f4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@30a4a111, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7f6a6d46]
+
+
+# Created at 2022-09-11T11:39:26.470
+Unexpected IOException: 5,1,com.loja.loja.models.PedidoProdutosTests,validarPropriedades,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.476
+Unexpected IOException: 6,1,com.loja.loja.models.PedidoProdutosTests,validarPropriedades,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.477
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.loja.loja.models.PedidoProdutosTests,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.479
+Unexpected IOException: 1,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.loja.loja.models.PedidosTests,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.483
+Unexpected IOException with stream: 2022-09-11 11:39:26.480  INFO 15872 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.loja.loja.models.PedidosTests], using SpringBootContextLoader
+
+
+# Created at 2022-09-11T11:39:26.488
+Unexpected IOException with stream: 2022-09-11 11:39:26.485  INFO 15872 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.loja.loja.models.PedidosTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+
+
+# Created at 2022-09-11T11:39:26.494
+Unexpected IOException with stream: 2022-09-11 11:39:26.488  INFO 15872 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.loja.loja.models.PedidosTests]: PedidosTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+
+
+# Created at 2022-09-11T11:39:26.521
+Unexpected IOException with stream: 2022-09-11 11:39:26.512  INFO 15872 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.loja.loja.LojaApplication for test class com.loja.loja.models.PedidosTests
+
+
+# Created at 2022-09-11T11:39:26.533
+Unexpected IOException with stream: 2022-09-11 11:39:26.524  INFO 15872 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+
+
+# Created at 2022-09-11T11:39:26.536
+Unexpected IOException with stream: 2022-09-11 11:39:26.535  INFO 15872 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7ed5cc8c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6bec566e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@47400608, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@374bf34b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@67aaf882, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6efc9d3f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@294bb6ae, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4172c967, org.springframework.test.context.event.EventPublishingTestExecutionListener@71ac5723, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7bb3294c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@f391e52, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5857d723, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4b518645, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@294a3f2a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6e466fdf]
+
+
+# Created at 2022-09-11T11:39:26.554
+Unexpected IOException: 5,1,com.loja.loja.models.PedidosTests,validarPropriedades,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.594
+Unexpected IOException: 6,1,com.loja.loja.models.PedidosTests,validarPropriedades,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.595
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.loja.loja.models.PedidosTests,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.612
+Unexpected IOException: 1,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.loja.loja.models.ProdutosTests,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.617
+Unexpected IOException with stream: 2022-09-11 11:39:26.613  INFO 15872 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.loja.loja.models.ProdutosTests], using SpringBootContextLoader
+
+
+# Created at 2022-09-11T11:39:26.620
+Unexpected IOException with stream: 2022-09-11 11:39:26.619  INFO 15872 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.loja.loja.models.ProdutosTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+
+
+# Created at 2022-09-11T11:39:26.621
+Unexpected IOException with stream: 2022-09-11 11:39:26.620  INFO 15872 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.loja.loja.models.ProdutosTests]: ProdutosTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+
+
+# Created at 2022-09-11T11:39:26.627
+Unexpected IOException with stream: 2022-09-11 11:39:26.626  INFO 15872 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.loja.loja.LojaApplication for test class com.loja.loja.models.ProdutosTests
+
+
+# Created at 2022-09-11T11:39:26.631
+Unexpected IOException with stream: 2022-09-11 11:39:26.629  INFO 15872 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+
+
+# Created at 2022-09-11T11:39:26.636
+Unexpected IOException with stream: 2022-09-11 11:39:26.634  INFO 15872 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@362fd4e9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7bbe852a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1299c874, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2adce412, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@629cf53c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d84ab90, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3182143c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7cb38a6a, org.springframework.test.context.event.EventPublishingTestExecutionListener@7983a5d5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3113595e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@109188b4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7091a016, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@14580edc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3f2a7ca0, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@23e297d9]
+
+
+# Created at 2022-09-11T11:39:26.641
+Unexpected IOException: 5,1,com.loja.loja.models.ProdutosTests,validarPropriedades,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.653
+Unexpected IOException: 6,1,com.loja.loja.models.ProdutosTests,validarPropriedades,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.656
+Unexpected IOException: 5,1,com.loja.loja.models.ProdutosTests,geraCodigoAoSetarNome,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.675
+Unexpected IOException: 6,1,com.loja.loja.models.ProdutosTests,geraCodigoAoSetarNome,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.678
+Unexpected IOException: 5,1,com.loja.loja.models.ProdutosTests,casoAltereOnomeCodigoFicaOMesmo,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.687
+Unexpected IOException: 6,1,com.loja.loja.models.ProdutosTests,casoAltereOnomeCodigoFicaOMesmo,null,null,null
+
+
+# Created at 2022-09-11T11:39:26.688
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.loja.loja.models.ProdutosTests,null,null,null
+
+

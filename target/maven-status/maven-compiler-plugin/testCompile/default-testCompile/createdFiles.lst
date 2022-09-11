@@ -1,0 +1,5 @@
+com\loja\loja\models\ClientesTests.class
+com\loja\loja\daos\ClienteDaoTests.class
+com\loja\loja\models\PedidoProdutosTests.class
+com\loja\loja\models\PedidosTests.class
+com\loja\loja\models\ProdutosTests.class

@@ -1,0 +1,6 @@
+com\loja\loja\models\PedidoProduto.class
+com\loja\loja\dao\IClientesDao.class
+com\loja\loja\LojaApplication.class
+com\loja\loja\models\Pedido.class
+com\loja\loja\models\Cliente.class
+com\loja\loja\models\Produto.class
